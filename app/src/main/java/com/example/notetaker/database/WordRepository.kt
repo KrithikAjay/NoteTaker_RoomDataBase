@@ -1,4 +1,4 @@
-package com.example.notetaker
+package com.example.notetaker.database
 
 import androidx.annotation.WorkerThread
 import com.example.notetaker.database.Word
@@ -18,6 +18,10 @@ class WordRepository(private val wordDao: WordDao) {
     @WorkerThread
     suspend fun insert(word: Word) {
         wordDao.insert(word)
+    }
+
+    suspend fun deleteAll(){
+        wordDao.deleteAll()
     }
 }
 

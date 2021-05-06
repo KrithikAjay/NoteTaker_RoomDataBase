@@ -1,6 +1,10 @@
 package com.example.notetaker
 
+import android.widget.Toast
+import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.lifecycle.*
+import com.example.notetaker.database.Word
+import com.example.notetaker.database.WordRepository
 import kotlinx.coroutines.launch
 
 class WordViewModel(private val repository: WordRepository) : ViewModel() {
@@ -18,6 +22,13 @@ class WordViewModel(private val repository: WordRepository) : ViewModel() {
         viewModelScope.launch {
             repository.insert(word)
         }
+    }
+
+    fun delete() {
+
+            viewModelScope.launch {
+                repository.deleteAll()
+            }
     }
 }
 

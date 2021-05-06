@@ -1,4 +1,4 @@
-package com.example.notetaker
+package com.example.notetaker.database
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

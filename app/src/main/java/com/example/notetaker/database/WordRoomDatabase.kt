@@ -1,4 +1,4 @@
-package com.example.notetaker
+package com.example.notetaker.database
 
 import android.content.Context
 import androidx.room.Database

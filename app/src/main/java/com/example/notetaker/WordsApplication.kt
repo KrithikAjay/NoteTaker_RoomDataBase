@@ -1,6 +1,8 @@
 package com.example.notetaker
 
 import android.app.Application
+import com.example.notetaker.database.WordRepository
+import com.example.notetaker.database.WordRoomDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 
