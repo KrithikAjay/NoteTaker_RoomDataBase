@@ -1,6 +1,8 @@
 package com.example.notetaker
 
 import androidx.annotation.WorkerThread
+import com.example.notetaker.database.Word
+import com.example.notetaker.database.WordDao
 import kotlinx.coroutines.flow.Flow
 
 class WordRepository(private val wordDao: WordDao) {
